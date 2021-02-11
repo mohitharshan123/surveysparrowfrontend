@@ -50,8 +50,14 @@ function ListItem({ item }) {
               {renderTime(item)}
             </CountdownCircleTimer>
           ) : (
-            <a className={classes.expired} href={item.link} target="_blank">
-             <ExploreOffIcon></ExploreOffIcon>{"    "} {item.link}
+            <a
+              className={classes.expired}
+              href={item.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ExploreOffIcon></ExploreOffIcon>
+              {"    "} {item.link}
             </a>
           )}
         </div>
