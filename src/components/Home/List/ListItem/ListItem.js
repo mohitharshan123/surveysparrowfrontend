@@ -54,7 +54,7 @@ function ListItem({ item }) {
               className={classes.expired}
               href={item.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <ExploreOffIcon></ExploreOffIcon>
               {"    "} {item.link}
